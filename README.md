@@ -3,7 +3,7 @@ Docker image for puppet agent
 
 
 ## Building the image Puppy
-docker build -t .
+docker build -t puppy .
 
 ## Running the container Puppy
 docker run -it --name puppies puppy
