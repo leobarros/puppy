@@ -8,6 +8,6 @@ RUN yum install puppet-agent -y
 RUN mkdir /puppy
 RUN mkdir /puppy/{manifest,modules}
 COPY install.pp /puppy/install.pp
+COPY site.pp /puppy/manifest/
 WORKDIR /puppy
 RUN /opt/puppetlabs/bin/puppet apply install.pp
-RUN touch site.pp /puppy/manifest/
