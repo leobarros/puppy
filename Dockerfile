@@ -10,3 +10,4 @@ RUN mkdir /puppy/{manifest,modules}
 COPY install.pp /puppy/install.pp
 WORKDIR /puppy
 RUN /opt/puppetlabs/bin/puppet apply install.pp
+RUN touch site.pp /puppy/manifest/
