@@ -1,4 +1,4 @@
-$packages = ['vim', 'strace', 'curl', 'lynx', 'epel-relase']
+$packages = ['vim', 'strace', 'curl', 'lynx', 'epel-release']
 
 package { $packages:
   ensure => installed,
